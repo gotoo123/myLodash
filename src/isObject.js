@@ -3,6 +3,8 @@ const isObject = (val) => {
   return val !== null && (type === 'object' || type === 'function');
 }
 
+export default isObject;
+
 /*
 * null是基本数据类型 （Number,String,Boolean,Undefined,Null,Symbol）
 * 但是typeof null 为 object,这是因为在js存储中对象是以000开头的，而null是一个空，相当于全0，所以typeof null也是object
