@@ -1,4 +1,4 @@
-const toString = Object.prototype.toString();
+const toString = Object.prototype.toString;
 
 const getTage = (val) => {
   if(val == null) {
@@ -16,8 +16,10 @@ export default getTage;
 * null == null              // true
 * undefined == undefined      // true
 *
-* null === undefined         //false
+* null === undefined         // false
 * null === null             // true
 * undefined === undefined     // true
 *
+*
+* NaN == NaN                // false
 * */
